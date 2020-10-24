@@ -1,0 +1,10 @@
+utilities\PropertiesRead.class
+utilities\Base.class
+or\SignIn_Page.class
+utilities\Screenshot.class
+or\TakeOurSurvey_Page.class
+utilities\Common.class
+or\ContactUs_Page.class
+or\AboutPresto_Page.class
+or\CustomerServiceOutlets_Page.class
+utilities\Waits.class

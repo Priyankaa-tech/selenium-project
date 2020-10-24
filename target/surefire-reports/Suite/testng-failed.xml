@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="2" name="SanityTest">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.SignIn_Test"/>
+    </classes>
+  </test> <!-- SanityTest -->
+  <test name="SanityTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.SignIn_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="signup"/>
+        </methods>
+      </class> <!-- test.SignIn_Test -->
+    </classes>
+  </test> <!-- SanityTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
